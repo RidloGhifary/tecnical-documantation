@@ -1,0 +1,146 @@
+/* GOOGLE FONT FAMILIY */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,800&display=swap');
+
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+#navbar{
+    width: 350px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right: 5px solid #555;
+}
+#header{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 30px 0;
+}
+#header a{
+    color: black;
+    text-decoration: none;
+}
+#navbar ul{
+    height: 85%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#navbar ul li{
+    padding: 15px 0;
+    width: 100%;
+    border-top: 2px solid #333;
+    padding: 20px 20px;
+}
+#navbar ul li a{
+    text-decoration: none;
+    display: block;
+    color: #333;  
+}
+#navbar ul li:hover a{
+    font-weight: 600;
+    color: blue;
+    cursor: pointer;
+}
+
+#main-doc{
+    margin-left: 350px;
+    padding: 30px;
+}
+
+#main-section{
+    margin-bottom: 30px;
+}
+
+.judul{
+    text-align: left;
+    font-size: 35px;
+}
+
+.description{
+    margin-left: 20px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    letter-spacing: 1px;
+}
+
+.listorder > li{
+    margin-left: 80px;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+code{
+    background-color: blanchedalmond;
+    border-radius: 5px;
+    text-align: left;
+    padding: 25px 10px;
+    margin-left: 50px;
+    display: block;
+    width: 90%;
+    line-height: 20px;
+    letter-spacing: 1.5px;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 779px){
+    #navbar{
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 285px;
+        background-color: white;
+    }
+    #navbar ul{
+        overflow-y: scroll;
+        overflow-x: hidden;
+        border-bottom: 5px solid #555;
+        height: 190px;
+    }
+    #main-doc{
+        margin-top: 290px;
+        padding: 30px;
+        width: 90vw;
+        margin-left: 0;
+    }
+    .judul{
+        text-align: left;
+        font-size: 35px;
+    }
+    
+    .description{
+        margin-left: 30px;
+        margin-bottom: 25px;
+        margin-top: 25px;
+        letter-spacing: 1px;
+    }
+    
+    .listorder > li{
+        margin-left: 50px;
+        margin-bottom: 25px;
+        letter-spacing: 1px;
+    }
+    
+    code{
+        background-color: blanchedalmond;
+        border-radius: 5px;
+        text-align: left;
+        padding: 25px 30px;
+        margin-left: 20px;
+        display: block;
+        width: 90%;
+        line-height: 20px;
+        letter-spacing: 1.5px;
+    }
+}
